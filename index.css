@@ -27,3 +27,10 @@ body {
     margin: 2rem 1rem;
     box-shadow: 3px 4px #504b55
 }
+
+.logos {
+    margin-left: 37%;
+    margin-right: 25%;
+    width: 100px;
+    height: 100px;
+}
