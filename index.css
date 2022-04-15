@@ -34,3 +34,12 @@ body {
     width: 100px;
     height: 100px;
 }
+
+#games-header {
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: whitesmoke;
+    font-family: monospace;
+    font-size: 20px;
+}
