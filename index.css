@@ -1,1 +1,11 @@
-
+body {
+    margin: 0;
+    background-image: url('https://facilityexecutive.com/wp-content/uploads/2020/07/Sloan.in_.Ivy_wrigley_Featured.jpg');
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color:mintcream;
+    font-family: monospace
+}
