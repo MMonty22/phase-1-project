@@ -42,6 +42,10 @@ function renderGames (games, i) {
     awayVotes.className = 'votes'
     let awayVotesNumb = 0
     awayVotes.innerText = `${awayVotesNumb} votes`
+    awayWinBtn.addEventListener('click', () => {
+        awayVotesNumb++
+        awayVotes.innerText = `${awayVotesNumb} votes`
+    })
 }
 
 const cubsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/chc.png'
