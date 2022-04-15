@@ -9,6 +9,8 @@ function getGames () {
     })
 }
 
+const gamesCollection = document.getElementById('games-collection')
+
 const cubsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/chc.png'
 const cardinalsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/stl.png'
 const redsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/cin.png'
