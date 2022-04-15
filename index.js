@@ -14,6 +14,12 @@ const gamesCollection = document.getElementById('games-collection')
 function renderGames (games, i) {
     const gameCard = document.createElement('div')
     gameCard.className = 'game-card'
+    const cardTitle = document.createElement('h2')
+    let awayTeam = document.createElement('h4')
+    awayTeam = games.dates[0].games[i].teams.away.team.name
+    let homeTeam = document.createElement('h4')
+    homeTeam = games.dates[0].games[i].teams.home.team.name
+    cardTitle.innerText = `${awayTeam} vs ${homeTeam}`
 }
 
 const cubsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/chc.png'
