@@ -11,6 +11,10 @@ function getGames () {
 
 const gamesCollection = document.getElementById('games-collection')
 
+function renderGames (games, i) {
+    
+}
+
 const cubsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/chc.png'
 const cardinalsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/stl.png'
 const redsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/cin.png'
