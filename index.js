@@ -241,6 +241,7 @@ function renderGames (games, i) {
             homeLogo.src = rockiesLogo
             break;
     }
+    gameCard.append(cardTitle, awayLogo, awayTeamRecord, homeLogo, homeTeamRecord, whoWillWin, awayWinBtn, awayVotes, homeWinBtn, homeVotes)
 }
 
 const cubsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/chc.png'
