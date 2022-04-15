@@ -35,6 +35,13 @@ function renderGames (games, i) {
     const whoWillWin = document.createElement('h3')
     whoWillWin.className = 'who-wins'
     whoWillWin.innerText = 'Who do you think will win? Vote below!'
+    const awayWinBtn = document.createElement('button')
+    awayWinBtn.innerText = `${awayTeam} win!`
+    awayWinBtn.className = 'buttons'
+    let awayVotes = document.createElement('p')
+    awayVotes.className = 'votes'
+    let awayVotesNumb = 0
+    awayVotes.innerText = `${awayVotesNumb} votes`
 }
 
 const cubsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/chc.png'
