@@ -2,30 +2,32 @@ function getGames () {
     fetch('http://statsapi.mlb.com/api/v1/schedule/games/?sportId=1')
     .then(res => res.json())
     .then(games => {
-        for (let i=0; i <= games.dates[0].games.length; i++) {
-            //console.log('games', games)
-            renderGames(games, i)
-        }
+        games.dates[0].games.forEach(function (game) {
+            //console.log('game',game),
+            renderGames(game)
+        })
     })
 }
 
+getGames();
+
 const gamesCollection = document.getElementById('games-collection')
 
-function renderGames (games, i) {
+function renderGames (game) {
     const gameCard = document.createElement('div')
     gameCard.className = 'game-card'
     const cardTitle = document.createElement('h2')
     let awayTeam = document.createElement('h4')
-    awayTeam = games.dates[0].games[i].teams.away.team.name
+    awayTeam = game.teams.away.team.name
     let homeTeam = document.createElement('h4')
-    homeTeam = games.dates[0].games[i].teams.home.team.name
+    homeTeam = game.teams.home.team.name
     cardTitle.innerText = `${awayTeam} vs ${homeTeam}`
-    let awayTeamWins = games.dates[0].games[i].teams.away.leagueRecord.wins
-    let awayTeamLosses = games.dates[0].games[i].teams.away.leagueRecord.losses
+    let awayTeamWins = game.teams.away.leagueRecord.wins
+    let awayTeamLosses = game.teams.away.leagueRecord.losses
     let awayTeamRecord = document.createElement('p')
     awayTeamRecord = `W-L: ${awayTeamWins}-${awayTeamLosses}`
-    let homeTeamWins = games.dates[0].games[i].teams.home.leagueRecord.wins
-    let homeTeamLosses = games.dates[0].games[i].teams.home.leagueRecord.losses
+    let homeTeamWins = game.teams.home.leagueRecord.wins
+    let homeTeamLosses = game.teams.home.leagueRecord.losses
     let homeTeamRecord = document.createElement('p')
     homeTeamRecord = `W-L: ${homeTeamWins}-${homeTeamLosses}`
     const awayLogo = document.createElement('img')
@@ -244,8 +246,6 @@ function renderGames (games, i) {
     gameCard.append(cardTitle, awayLogo, awayTeamRecord, homeLogo, homeTeamRecord, whoWillWin, awayWinBtn, awayVotes, homeWinBtn, homeVotes)
     gamesCollection.appendChild(gameCard)
 }
-
-getGames();
 
 const cubsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/chc.png'
 const cardinalsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/stl.png'
