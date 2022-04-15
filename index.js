@@ -53,6 +53,10 @@ function renderGames (games, i) {
     homeVotes.className = 'votes'
     let homeVotesNumb = 0
     homeVotes.innerText = `${homeVotesNumb} votes`
+    homeWinBtn.addEventListener('click', () => {
+        homeVotesNumb++
+        homeVotes.innerText = `${homeVotesNumb} votes`
+    })
 }
 
 const cubsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/chc.png'
