@@ -12,7 +12,8 @@ function getGames () {
 const gamesCollection = document.getElementById('games-collection')
 
 function renderGames (games, i) {
-    
+    const gameCard = document.createElement('div')
+    gameCard.className = 'game-card'
 }
 
 const cubsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/chc.png'
