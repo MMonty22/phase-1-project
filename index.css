@@ -43,3 +43,9 @@ body {
     font-family: monospace;
     font-size: 20px;
 }
+
+.who-wins {
+    margin-top: 0%;
+    margin-bottom: 2%;
+    vertical-align: middle
+}
