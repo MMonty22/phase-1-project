@@ -49,6 +49,10 @@ function renderGames (games, i) {
     const homeWinBtn = document.createElement('button')
     homeWinBtn.innerText = `${homeTeam} win!`
     homeWinBtn.className = 'buttons'
+    let homeVotes = document.createElement('p')
+    homeVotes.className = 'votes'
+    let homeVotesNumb = 0
+    homeVotes.innerText = `${homeVotesNumb} votes`
 }
 
 const cubsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/chc.png'
