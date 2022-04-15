@@ -28,6 +28,10 @@ function renderGames (games, i) {
     let homeTeamLosses = games.dates[0].games[i].teams.home.leagueRecord.losses
     let homeTeamRecord = document.createElement('p')
     homeTeamRecord = `W-L: ${homeTeamWins}-${homeTeamLosses}`
+    const awayLogo = document.createElement('img')
+    awayLogo.className = 'logos'
+    const homeLogo = document.createElement('img')
+    homeLogo.className = 'logos'
 }
 
 const cubsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/chc.png'
