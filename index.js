@@ -149,6 +149,98 @@ function renderGames (games, i) {
             awayLogo.src = rockiesLogo
             break;
     }
+    switch (homeTeam) {
+        case 'Chicago Cubs':
+            homeLogo.src = cubsLogo
+            break;
+        case 'St. Louis Cardinals':
+            homeLogo.src = cardinalsLogo
+            break;
+        case 'Cincinnati Reds':
+            homeLogo.src = redsLogo
+            break;
+        case 'Milwaukee Brewers':
+            homeLogo.src = brewersLogo
+            break;
+        case 'Pittsburgh Pirates':
+            homeLogo.src = piratesLogo
+            break;
+        case 'Kansas City Royals':
+            homeLogo.src = royalsLogo
+            break;
+        case 'Chicago White Sox':
+            homeLogo.src = whiteSoxLogo
+            break;
+        case 'Minnesota Twins':
+            homeLogo.src = twinsLogo
+            break;
+        case 'Detroit Tigers':
+            homeLogo.src = tigersLogo
+            break;
+        case 'Cleveland Guardians':
+            homeLogo.src = guardiansLogo
+            break; 
+        case 'New York Yankees':
+            homeLogo.src = yankeesLogo
+            break;
+        case 'Boston Red Sox':
+            homeLogo.src = redSoxLogo
+            break;
+        case 'Tampa Bay Rays':
+            homeLogo.src = raysLogo
+            break;
+        case 'Baltimore Orioles':
+            homeLogo.src = oriolesLogo
+            break;
+        case 'Toronto Blue Jays':
+            homeLogo.src = blueJaysLogo
+            break;
+        case 'Miami Marlins':
+            homeLogo.src = marlinsLogo
+            break;
+        case 'Philadelphia Phillies':
+            homeLogo.src = philliesLogo
+            break;
+        case 'Washington Nationals':
+            homeLogo.src = nationalsLogo
+            break;
+        case 'New York Mets':
+            homeLogo.src = metsLogo
+            break;
+        case 'Atlanta Braves':
+            homeLogo.src = bravesLogo
+            break;
+        case 'Seattle Mariners':
+            homeLogo.src = marinersLogo
+            break;
+        case 'Oakland Athletics':
+            homeLogo.src = athleticsLogo
+            break;
+        case 'Texas Rangers':
+            homeLogo.src = rangersLogo
+            break;
+        case 'Los Angeles Angels':
+            homeLogo.src = angelsLogo
+            break;
+        case 'Houston Astros':
+            homeLogo.src = astrosLogo
+            break;
+        case 'Los Angeles Dodgers':
+            homeLogo.src = dodgersLogo
+            break;
+        case 'San Diego Padres':
+            homeLogo.src = padresLogo
+            break;
+        case 'San Francisco Giants':
+            homeLogo.src = giantsLogo
+            break;
+        case 'Arizona Diamondbacks':
+            homeLogo.src = dbacksLogo
+            break;
+        case 'Colorado Rockies':
+            homeLogo.src = rockiesLogo
+            break;
+    }
 }
 
 const cubsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/chc.png'
