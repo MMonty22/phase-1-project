@@ -242,6 +242,7 @@ function renderGames (games, i) {
             break;
     }
     gameCard.append(cardTitle, awayLogo, awayTeamRecord, homeLogo, homeTeamRecord, whoWillWin, awayWinBtn, awayVotes, homeWinBtn, homeVotes)
+    gamesCollection.appendChild(gameCard)
 }
 
 const cubsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/chc.png'
