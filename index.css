@@ -9,3 +9,8 @@ body {
     background-color:mintcream;
     font-family: monospace
 }
+
+#games-collection {
+    margin: 2rem;
+    padding: 2px 16px;
+}
