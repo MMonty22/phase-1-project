@@ -20,6 +20,14 @@ function renderGames (games, i) {
     let homeTeam = document.createElement('h4')
     homeTeam = games.dates[0].games[i].teams.home.team.name
     cardTitle.innerText = `${awayTeam} vs ${homeTeam}`
+    let awayTeamWins = games.dates[0].games[i].teams.away.leagueRecord.wins
+    let awayTeamLosses = games.dates[0].games[i].teams.away.leagueRecord.losses
+    let awayTeamRecord = document.createElement('p')
+    awayTeamRecord = `W-L: ${awayTeamWins}-${awayTeamLosses}`
+    let homeTeamWins = games.dates[0].games[i].teams.home.leagueRecord.wins
+    let homeTeamLosses = games.dates[0].games[i].teams.home.leagueRecord.losses
+    let homeTeamRecord = document.createElement('p')
+    homeTeamRecord = `W-L: ${homeTeamWins}-${homeTeamLosses}`
 }
 
 const cubsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/chc.png'
