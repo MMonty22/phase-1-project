@@ -32,6 +32,9 @@ function renderGames (games, i) {
     awayLogo.className = 'logos'
     const homeLogo = document.createElement('img')
     homeLogo.className = 'logos'
+    const whoWillWin = document.createElement('h3')
+    whoWillWin.className = 'who-wins'
+    whoWillWin.innerText = 'Who do you think will win? Vote below!'
 }
 
 const cubsLogo = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/chc.png'
