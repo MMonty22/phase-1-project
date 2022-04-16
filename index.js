@@ -31,6 +31,8 @@ const teamLogos = {
     'Los Angeles Angels': 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/laa.png'
 }
 
+const gamesCollection = document.getElementById('games-collection')
+
 function renderGames (game) {
     const gameCard = document.createElement('div')
     gameCard.className = 'game-card'
@@ -95,5 +97,3 @@ function getGames () {
 }
 
 getGames();
-
-const gamesCollection = document.getElementById('games-collection')
